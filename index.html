@@ -2,27 +2,30 @@
 <html>
 <head>
   <title>Your List</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-sortable/0.15.0/sortable.min.js"></script>
+  <script src="app.js"></script>
 </head>
-<body ng-app="myList" ng-controller="myCtrl">
+<body>
 
-<div class="container">
+<div ng-app="myList" ng-controller="myCtrl" class="container">
+  <h1>Your List</h1>
   <ul ui-sortable="sortableOptions" ng-model="items" class="list-group">
     <li ng-repeat="x in items" class="list-group-item">
       {{x}}
       <span ng-click="removeItem($index)">&times;</span>
     </li>
   </ul>  
-  <pre>{{x}}</pre>
+  <!-- <pre>{{items}}</pre> -->
   <input ng-model="addMe">
   <button ng-click="addItem()">Add</button>
   <p>{{errortext}}</p>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-sortable/0.15.0/sortable.min.js"></script>
-<script src="app.js"></script>
 </body>
 </html>
