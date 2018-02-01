@@ -9,7 +9,7 @@ app.controller("myCtrl", function($scope) {
       }
     if ($scope.items.indexOf($scope.addMe) == -1) {
       $scope.items.push($scope.addMe);
-      console.log(linkify($scope.addMe));
+      // console.log(linkify($scope.addMe));
   } else {
       $scope.errortext = "Duplicate item";
   }
@@ -22,8 +22,8 @@ app.controller("myCtrl", function($scope) {
 
   $scope.checkItem = function (x) {
     var input = "";
-    console.log(ValidURL(x));
-    console.log(linkify(x));
+    // console.log(ValidURL(x));
+    // console.log(linkify(x));
     if (ValidURL(x)) {
     input = linkify(x);
     return input;
