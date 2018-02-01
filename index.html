@@ -8,26 +8,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-sortable/0.15.0/sortable.min.js"></script>
+  <script src="jquery.ui.touch-punch.min.js"></script>
+  <script src="urlCheck.js"></script>
   <script src="app.js"></script>
 </head>
 <body>
-
+<br />
 <div ng-app="myList" ng-controller="myCtrl" class="container">
-  <h1>Your List</h1>
+  <h2>Your List</h2>
   <ul ui-sortable="sortableOptions" ng-model="items" class="list-group">
     <li ng-repeat="x in items" class="list-group-item">
+      <a href="{{x}}">{{x}}</a>
       {{x}}
       <span ng-click="removeItem($index)">&times;</span>
     </li>
   </ul>  
-  <!-- <pre>{{items}}</pre> -->
   <br />
   <div class="input-group">
-  <input ng-model="addMe" class="form-control">
+  <form ng-submit="addItem()"><input ng-model="addMe" class="form-control" /></form>
   <button ng-click="addItem()" class="btn btn-primary">Add</button>
   </div>
   <p>{{errortext}}</p>
+  <pre class="list-group-item">{{items}}</pre>
 </div>
 
 </body>
