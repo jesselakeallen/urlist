@@ -22,15 +22,15 @@
 <div ng-app="myList" ng-controller="myCtrl" class="container-fluid px-5">
   <h2 class="display-3">urlist</h2>
   <ul ui-sortable="sortableOptions" ng-model="items" class="list-group col-*-*">
-    <li ng-repeat="x in items" class="list-group-item btn-group">
-      <ng-bind-html ng-bind-html="checkItem(x)" class="btn"></ng-bind-html>
-      <button ng-click="removeItem($index)" class="btn btn-danger rounded"><i class="material-icons">delete_forever</i></button>
+    <li ng-repeat="x in items" class="list-group-item">
+      <ng-bind-html ng-bind-html="checkItem(x)" class=""></ng-bind-html>
+      <span ng-click="removeItem($index)" class="delete"><i class="material-icons">delete_forever</i></span>
     </li>
   </ul>  
   <br />
   <div class="input-group">
   <form ng-submit="addItem()"><input ng-model="addMe" class="form-control" /></form>
-  <button ng-click="addItem()" class="btn btn-primary ml-3">Add</button>
+  <button ng-click="addItem()" class="btn btn-primary ml-3 material-icons">add</button>
   </div>
   <p>{{errortext}}</p>
   <pre class="list-group-item">{{items}}</pre>

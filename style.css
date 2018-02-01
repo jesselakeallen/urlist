@@ -6,18 +6,10 @@ body {
     background-color: aliceblue;
 }
 
-.btn-danger {
+.delete {
     float: right;
 }
 
 .material-icons {
   vertical-align: middle;
-}
-
-li {
-  padding: 0%;
-}
-
-.btn {
-  margin: 0%;
 }
