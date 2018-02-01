@@ -28,7 +28,7 @@ app.controller("myCtrl", function($scope) {
     input = linkify(x);
     return input;
     } else {
-      return input;
+    return input + x;
     }
   }
 });
