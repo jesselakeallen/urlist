@@ -4,6 +4,7 @@
   <title>urlist</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -21,9 +22,9 @@
 <div ng-app="myList" ng-controller="myCtrl" class="container-fluid px-5">
   <h2 class="display-3">urlist</h2>
   <ul ui-sortable="sortableOptions" ng-model="items" class="list-group col-*-*">
-    <li ng-repeat="x in items" class="list-group-item">
-      <ng-bind-html ng-bind-html="checkItem(x)"></ng-bind-html>
-      <span ng-click="removeItem($index)">&times;</span>
+    <li ng-repeat="x in items" class="list-group-item btn-group">
+      <ng-bind-html ng-bind-html="checkItem(x)" class="btn"></ng-bind-html>
+      <button ng-click="removeItem($index)" class="btn btn-danger rounded"><i class="material-icons">delete_forever</i></button>
     </li>
   </ul>  
   <br />
