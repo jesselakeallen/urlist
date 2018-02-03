@@ -8,3 +8,4 @@ async function scrape(x) {
 }
 
 scrape("https://www.amazon.com/dp/B01N7HEVMB/_encoding=UTF8?coliid=IFOYAHI2T2MK&colid=XHWO9NOYJCG6&psc=1");
+//node scraper.js
