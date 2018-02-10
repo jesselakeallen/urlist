@@ -13,7 +13,7 @@ app.controller("myCtrl", function($scope) {
   } else {
       $scope.errortext = "Duplicate item";
   }
-      $scope.addMe = '';
+      $scope.addMe = "";
   }
 
   $scope.removeItem = function (x) {
