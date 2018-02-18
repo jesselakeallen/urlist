@@ -1,6 +1,6 @@
 # urlist
-the main idea for this project is to create a simple wish/shopping list that can be rearranged with ease.
-
+the main idea for urlist is to create a simple wish/shopping list that can be rearranged with ease.\
+the goal of this project is to create a solution to a simple problem while challenging myself with a basic full-stack project.
 
 ## features
 #### complete
