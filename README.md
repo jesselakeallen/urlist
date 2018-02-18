@@ -20,6 +20,8 @@ the main idea for this project is to create a simple wish/shopping list that can
 ## view it live
 the master version can be visited [here](https://rocket-launcher.github.io/urlist/)\
 the in-progress version can be visited [here](http://urlist.getforge.io/)
+
+### *references coming soon*
 \
 \
 \
