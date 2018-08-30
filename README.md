@@ -18,8 +18,7 @@ the goal of this project is to create a solution to a simple problem while chall
 * resizes for mobile
 
 ## view it live
-the master version can be visited [here](https://rocket-launcher.github.io/urlist/)\
-the in-progress version can be visited [here](http://urlist.getforge.io/)
+the master version can be visited [here](https://jesselakeallen.github.io/urlist/)\
 
 ### *references coming soon*
 \
