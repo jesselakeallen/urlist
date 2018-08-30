@@ -18,7 +18,7 @@ the goal of this project is to create a solution to a simple problem while chall
 * resizes for mobile
 
 ## view it live
-the master version can be visited [here](https://jesselakeallen.github.io/urlist/)\
+the master version can be visited [here](https://jesselakeallen.github.io/urlist/)
 
 ### *references coming soon*
 \
