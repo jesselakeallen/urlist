@@ -1,0 +1,20 @@
+{
+  "name": "urlist",
+  "version": "1.0.0",
+  "description": "the main idea for urlist is to create a simple wish/shopping list that can be rearranged with ease.\\\r the goal of this project is to create a solution to a simple problem while challenging myself with a basic full-stack project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesselakeallen/urlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesselakeallen/urlist/issues"
+  },
+  "homepage": "https://github.com/jesselakeallen/urlist#readme"
+}
