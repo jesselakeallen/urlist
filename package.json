@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jesselakeallen/urlist/issues"
   },
-  "homepage": "https://github.com/jesselakeallen/urlist#readme"
+  "homepage": "https://github.com/jesselakeallen/urlist#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
