@@ -4,12 +4,7 @@
   "description": "urlist",
   "main": "scripts/app.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,15 +17,14 @@
   },
   "homepage": "https://github.com/Rocket-Launcher/list#readme",
   "dependencies": {
-    "express": "^4.16.2",
-    "serve": "^11.3.2"
+    "express": "^4.16.2"
   },
   "scripts": {
-	"dev": "react-scripts start",
-	"start": "serve -s build",
-	"build": "react-scripts build",
-	"test": "react-scripts test --env=jsdom",
-	"eject": "react-scripts eject",
-	"heroku-postbuild": "npm run build"
-	}
+  "dev": "react-scripts start",
+  "start": "serve -s build",
+  "build": "react-scripts build",
+  "test": "react-scripts test --env=jsdom",
+  "eject": "react-scripts eject",
+  "heroku-postbuild": "npm run build"
+  }
 }
